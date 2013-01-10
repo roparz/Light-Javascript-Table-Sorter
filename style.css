@@ -1,0 +1,75 @@
+
+.orders {
+  text-align: center;
+  overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.orders table {
+  width: 100%;
+}
+
+.orders tr.due, .orders tr.late {
+  background-color: #faebeb;
+}
+
+.orders tr.inactive {
+  color: #999;
+  font-style: italic;
+}
+
+.orders td, .orders th {
+  padding: 10px;
+}
+
+.orders td:first-child, .orders th:first-child {
+  padding-left: 20px;
+}
+
+.orders td:last-child, .orders th:last-child {
+  padding-right: 20px;
+}
+
+.orders th {
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  cursor: pointer;
+}
+
+.orders th.desc:after {
+  border-top-color: #666;
+}
+
+.orders th.asc:before {
+  border-bottom-color: #666;
+}
+
+.orders th:after, .orders th:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px;
+  width: 0;
+  height: 0;
+}
+
+.orders th:after {
+  border-top-color: #ddd;
+  top: 22px;
+}
+
+.orders th:before {
+  border-bottom-color: #ddd;
+  top: 10px;
+}
+
+.github {
+  margin-top: 50px;
+}
+
+
+
