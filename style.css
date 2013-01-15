@@ -1,51 +1,46 @@
 
-.orders {
+h2 {
+  margin-bottom: 50px;
+}
+
+.container {
   text-align: center;
   overflow: hidden;
   width: 800px;
   margin: 0 auto;
 }
 
-.orders table {
+.container table {
   width: 100%;
 }
 
-.orders tr.due, .orders tr.late {
-  background-color: #faebeb;
-}
-
-.orders tr.inactive {
-  color: #999;
-  font-style: italic;
-}
-
-.orders td, .orders th {
+.container td, .container th {
   padding: 10px;
 }
 
-.orders td:first-child, .orders th:first-child {
+.container td:first-child, .container th:first-child {
   padding-left: 20px;
 }
 
-.orders td:last-child, .orders th:last-child {
+.container td:last-child, .container th:last-child {
   padding-right: 20px;
 }
 
-.orders th {
+.container th {
   border-bottom: 1px solid #ddd;
   position: relative;
   cursor: pointer;
 }
 
-.orders th.desc:after {
+.container th.desc:after {
   border-top-color: #666;
 }
 
-.orders th.asc:before {
+.container th.asc:before {
   border-bottom-color: #666;
 }
 
-.orders th:after, .orders th:before {
+.container th:after, .container th:before {
   content: '';
   display: block;
   position: absolute;
@@ -57,12 +52,12 @@
   height: 0;
 }
 
-.orders th:after {
+.container th:after {
   border-top-color: #ddd;
   top: 22px;
 }
 
-.orders th:before {
+.container th:before {
   border-bottom-color: #ddd;
   top: 10px;
 }
