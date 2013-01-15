@@ -34,17 +34,19 @@
 				_reset();
 			}
 			_th = e.target;
-			_cellIndex = _th.cellIndex;
-			var tbody = _th.offsetParent.getElementsByTagName('tbody')[0],
-				rows = tbody.rows;
-			if (rows) {
-				rows = Arr.sort.call(Arr.slice.call(rows, 0), _sort);
-				if (_order === 'asc') {
-					Arr.reverse.call(rows);
+			if (_th.nodeName.toLowerCase() === 'th') {
+				_cellIndex = _th.cellIndex;
+				var tbody = _th.offsetParent.getElementsByTagName('tbody')[0],
+					rows = tbody.rows;
+				if (rows) {
+					rows = Arr.sort.call(Arr.slice.call(rows, 0), _sort);
+					if (_order === 'asc') {
+						Arr.reverse.call(rows);
+					}
+					_toggle();
+					tbody.innerHtml = '';
+					Arr.forEach.call(rows, function(row) { tbody.appendChild(row); });
 				}
-				_toggle();
-				tbody.innerHtml = '';
-				Arr.forEach.call(rows, function(row) { tbody.appendChild(row); });
 			}
 		}
 
