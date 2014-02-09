@@ -1,0 +1,6 @@
+{
+  "name": "Light Javascript Table Sorter",
+  "version": "1.0",
+  "main": "light-table-sorter.js",
+  "dependencies": {}
+}
