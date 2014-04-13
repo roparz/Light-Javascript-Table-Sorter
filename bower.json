@@ -1,6 +1,25 @@
 {
-  "name": "Light Javascript Table Sorter",
-  "version": "1.0",
-  "main": "light-table-sorter.js",
-  "dependencies": {}
+  "name": "Light-Javascript-Table-Sorter",
+  "version": "0.0.1",
+  "homepage": "https://github.com/roparz/Light-Javascript-Table-Sorter",
+  "authors": [
+    "Christophe Gourmelon <christophe.gourmelon@gmail.com>"
+  ],
+  "description": "Lightweight javascript table sorter",
+  "main": "light-table-sorter.min.js",
+  "keywords": [
+    "javascript",
+    "table",
+    "sorter",
+    "light",
+    "lightweight"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

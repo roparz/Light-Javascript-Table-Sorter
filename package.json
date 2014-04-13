@@ -1,0 +1,11 @@
+{
+  "name": "Light-Table-Sorter",
+  "version": "0.0.1",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.6.0",
+    "gulp-coffee": "^1.4.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.2.1"
+  }
+}

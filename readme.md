@@ -8,14 +8,13 @@ Here is a simple implementation [demo](http://roparz.me/play/light-javascript-ta
 
 ## How to use it?
 
-Installation is very simple. Just add the script in your html (head or foot, whatever):
+Installation is very simple. Just add the script at the end of your html (just before `</body>`) and then call the `init` function:
 ```html
-<script src="light-table-sorter.js"></script>
-```
-
-Or the minified version:
-```html
+<body>
+...
 <script src="light-table-sorter.min.js"></script>
+<script> LightTableSorter.init() </script>
+</body>
 ```
 
 You just need to respect this table structure:
