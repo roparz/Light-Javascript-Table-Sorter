@@ -37,10 +37,10 @@ LightTableSorter = (function() {
   };
   _onClickEvent = function(e) {
     var row, rows, tbody, _i, _len;
-    if (_th && (_cellIndex !== e.target.cellIndex)) {
+    if (_th && (_cellIndex !== e.currentTarget.cellIndex)) {
       _reset();
     }
-    _th = e.target;
+    _th = e.currentTarget;
     if (_th.nodeName.toLowerCase() === 'th') {
       _cellIndex = _th.cellIndex;
       tbody = _th.offsetParent.getElementsByTagName('tbody')[0];
