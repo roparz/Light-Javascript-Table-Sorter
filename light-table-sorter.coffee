@@ -28,8 +28,8 @@ LightTableSorter = do ->
         _order = ''
 
     _onClickEvent = (e) ->
-        _reset() if _th and (_cellIndex isnt e.target.cellIndex)
-        _th = e.target
+        _reset() if _th and (_cellIndex isnt e.currentTarget.cellIndex)
+        _th = e.currentTarget
         if _th.nodeName.toLowerCase() is 'th'
             _cellIndex = _th.cellIndex
             tbody = _th.offsetParent.getElementsByTagName('tbody')[0]
